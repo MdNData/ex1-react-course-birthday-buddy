@@ -8,10 +8,9 @@ const App = () => {
     setPerson([]);
   }
   return (
-    <div>
-      <List data={person} />
-      <button onClick={handleClearAll} className="btn">Clear All</button>
-    </div>
+    <main>
+      <List data={person} handle={setPerson} />
+    </main>
   );
 };
 export default App;
