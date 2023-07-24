@@ -7,7 +7,7 @@ export const List = ({ data, handle }) => {
       {data.map((person, key) => {
         return <Person data={person} key={key} />;
       })}
-      <button onClick={handle} className="btn">
+      <button onClick={handle} className="btn btn-block">
         Clear All
       </button>
     </section>
