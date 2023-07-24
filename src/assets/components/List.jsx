@@ -5,7 +5,7 @@ export const List = ({ data, handle }) => {
     <section className="container">
       <h1>{data.length} Birthday Today</h1>
       {data.map((person, key) => {
-        return <Person className="person" data={person} key={key} />;
+        return <Person data={person} key={key} />;
       })}
       <button onClick={handle} className="btn">
         Clear All
